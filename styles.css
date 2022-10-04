@@ -1,0 +1,43 @@
+html{
+    font-size: 62.5%;
+}
+
+body{
+    /*background-color: cadetblue;*/
+    display: flex;
+    flex-direction: column;
+}
+
+header{
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    background-color: cadetblue;
+    color: white;
+}
+.circle {
+    width: 20rem;
+    height: 10rem;
+    border-radius: 10%;
+    background-color: lightcoral;
+    border: 2px solid rebeccapurple;
+    margin: .2rem;
+}
+
+section{
+    width: 25rem;
+    height: 30rem;
+    background-color: chocolate;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.test{
+    width: 5rem;
+    height: 5rem;
+    color: darkkhaki;
+    margin: 2px;
+    border: 1px dashed azure;
+}
