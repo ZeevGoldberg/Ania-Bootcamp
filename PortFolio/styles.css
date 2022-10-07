@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@300&family=Mouse+Memoirs&family=Ubuntu&display=swap');
+
+html{
+    font-size: 62.5%;
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Gemunu Libre', sans-serif;
+}
+
+body{
+    background-color: lightgray;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+/* עיצוב הבר עיצוב */
+nav{
+    width:100%;
+    height: 170px;
+    line-height: 50px;
+    /* background-color: cadetblue; */
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.logo_image{
+    width: 15rem;
+    height: 15rem;
+    margin: 1.5rem 3rem;
+}
+.nav_ul{
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+}
+ /* עיצוב החלק המרכזי */
+main{
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.main_right_info{
+       margin: 3rem;
+    max-width: 30rem;
+}
+
+.main_right_info_header{
+    text-decoration: peru underline overline wavy;
+    font-size: 3rem;
+    color: green;
+}
+
+.styled_break{
+    width: 3rem;
+    height: 0.5rem;
+    border-radius: .25rem;
+    background-color: thistle;
+    margin: 3rem 0;
+}
+.headshot {
+    width: 15rem;
+    height: 15rem;
+    border-radius: 50%;
+}
+
+button{
+    width: 100%;
+    margin-top: 1rem;
+    border: 0;
+    padding: 10px 20px;
+    color: antiquewhite;
+    background: rgb(63,94,251);
+    background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
+    font-size: large;
+    text-shadow: 4px 4px 2px rgba(218,18,18,0.6);
+    box-shadow: 10px 10px 59px 1px rgba(42,190,209,0.6) inset;
+    border-radius: 10px;
+}
+button:hover{
+    background: rgb(135,226,107);
+    background: linear-gradient(90deg, rgba(135,226,107,1) 0%, rgba(215,107,19,1) 100%);
+    text-transform: uppercase;
+}
+button:active{
+    box-shadow: 10px 10px 20px 27px rgba(27,53,189,0.75) inset;
+}
+
+/* .main_left{
+    width: 30rem;
+    height: 30rem;
+    margin: 0.5rem;
+} */
+
+.main_left_image{
+    width: 25rem;
+    height: 25rem;
+    border-radius: 40%;
+    margin: 3rem;
+    
+}
+.second_part{
+    width: 100%;
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.second_part_image{
+    width: 30rem;
+    margin: .5rem;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.second_part_info{
+    width: 30rem;
+    margin: .5rem;
+    font-size: 2rem;
+}
+
+.social_part{
+    width: 100%;
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.sec_box{
+    width: 5rem;
+    height: 5rem;
+    color: rgb(151, 26, 218);
+    margin: 2px;
+    border: 1px dashed rgb(87, 180, 180);
+}
+#shadow{
+    box-shadow: 2px 2px 5px red;
+}
+footer {
+    background: #636769;
+    width:100%;
+    position:relative;
+    bottom:0px;
+ }
+
+ ul{
+    list-style: circle;
+    line-height: 15px;
+ }
+
+ li{
+    margin: 1.5rem 0.5rem;
+    font-size: 1.5rem;
+ }
+
+ a{
+    text-decoration: solid;
+ }
+ a:hover{
+    color: bisque;
+    font-size: x-large;
+ }
+ a:active{
+    color: goldenrod;
+ }
