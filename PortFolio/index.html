@@ -3,12 +3,19 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <title>Online PortFolio</title>
   </head>
   <body>
     <nav>
       <img
-        src="https://cdn-icons-png.flaticon.com/800/7207/7207387.png"
+        src="images/ZYG_logo.png"
         class="logo_image"
         alt="nav bar image"
       />
@@ -19,35 +26,88 @@
       </ul>
     </nav>
     <main>
-        <section class="main_right_info">
-          <h1 class="main_right_info_header">Zeev The Gore Feaster</h1>
-          <p class="main_right_info_p">Lorem ipsum dolor sit amet consectetur adipisicing elit. In asperiores aliquam atque odit corporis.</p>
-          <div class="styled_break"></div>
-          <button>Click Me!!!</button>
-        </section>
-        <section class="main_left">
-          <img class="main_left_image" src="https://images.unsplash.com/photo-1537511446984-935f663eb1f4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="man in office">
-        </section>
+      <section class="main_right_info">
+        <h1 class="main_right_info_header">Zeev The Gore Feaster</h1>
+        <p class="main_right_info_p">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. In asperiores
+          aliquam atque odit corporis.
+        </p>
+        <div class="styled_break"></div>
+        <button class="button">Click Me!!!</button>
+      </section>
+      <section class="main_left">
+        <img
+          class="main_left_image"
+          src="https://images.unsplash.com/photo-1537511446984-935f663eb1f4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+          alt="man in office"
+        />
+      </section>
     </main>
     <section class="second_part">
-        <section class="second_part_image">
-          <img
-            src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
-            class="headshot"
-            alt="Headshot"
-          />
-        </section>
-        <section class="second_part_info">
-          <h2><a name="about_me">About Me</a></h2>
-          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos veniam incidunt aspernatur cupiditate consequatur tempore ab ratione debitis dicta minima deserunt harum ullam, molestias at?</p>
-        </section>
+      <section class="second_part_image">
+        <img
+          src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
+          class="headshot"
+          alt="Headshot"
+        />
+      </section>
+      <section class="second_part_info">
+        <h2><a name="about_me">About Me</a></h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos veniam
+          incidunt aspernatur cupiditate consequatur tempore ab ratione debitis
+          dicta minima deserunt harum ullam, molestias at?
+        </p>
+      </section>
     </section>
     <section class="social_part">
-      <div class="sec_box">d</div>
-      <div class="sec_box">f</div>
-      <div class="sec_box" id="shadow">g</div>
-      <div class="sec_box">6</div>
-      <div class="sec_box">8</div>
+      <i class="fonta fa-brands fa-facebook"></i>
+      <i class="fonta fa-brands fa-instagram"></i>
+      <i class="fonta fa-brands fa-tiktok"></i>
+      <i class="fonta fa-brands fa-github"></i>
+      <i class="fonta fa-brands fa-slack"></i>
+    </section>
+    <section class="form_part">
+      <form action="">
+        <h2>Contact me</h2>
+        <div class="input_section">
+          <div class="input_section_name">
+            <label for="first-name">First Name:</label>
+            <input
+              type="text"
+              id="first-name"
+              name="first-name"
+              value="John?"
+            />
+          </div>
+          <div class="input_section_name">
+            <label for="last-name">Last Name:</label>
+            <input type="text" id="last-name" name="last-name" value="Smith?" />
+          </div>
+        </div>
+        <div class="input_section">
+          <input type="radio" id="teaching" name="teaching" value="teaching" />
+          <label for="teaching">Teaching</label>
+          <input type="radio" id="office" name="office" value="office" />
+          <label for="office">Office</label>
+          <input
+            type="radio"
+            id="programming"
+            name="programming"
+            value="programming"
+          />
+          <label for="programming">Programming</label>
+        </div>
+        <div class="input_section">
+          <input type="checkbox" id="other" name="other" value="other" />
+          <label for="other">Other</label>
+          <input type="checkbox" id="again" name="again" value="again" />
+          <label for="again">Again</label>
+          <input type="checkbox" id="another" name="another" value="another" />
+          <label for="another">Another</label>
+        </div>
+        <input type="submit" value="submit" class="button" />
+      </form>
     </section>
     <footer>
       <ul class="about_me">

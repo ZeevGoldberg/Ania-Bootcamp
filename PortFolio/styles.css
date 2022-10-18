@@ -13,20 +13,22 @@ body{
     flex-direction: column;
     margin: 0;
 }
-/* עיצוב הבר עיצוב */
+/* עיצוב הבר  */
 nav{
     width:100%;
-    height: 170px;
+    /* height: 17rem; */
     line-height: 50px;
     /* background-color: cadetblue; */
     color: white;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
+    align-items: flex-end;
 }
 .logo_image{
-    width: 15rem;
-    height: 15rem;
+    width: 27rem;
+    height: 10rem;
+    border-radius: 0.5rem;
     margin: 1.5rem 3rem;
 }
 .nav_ul{
@@ -40,19 +42,32 @@ nav{
  /* עיצוב החלק המרכזי */
 main{
     width: 100%;
-
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
 }
 
 .main_right_info{
-       margin: 3rem;
+    margin: 3rem;
     max-width: 30rem;
+    align-items: center;
+    font-size: 2rem;
 }
 
+.headshot {
+    width: 15rem;
+    height: 15rem;
+    border-radius: 50%;
+}
+@media only screen and (max-width: 40rem){
+    .main_right_info{
+        max-width: 40rem;
+    }   
+    .main_left_image {
+        display: none;
+    } 
+}
 .main_right_info_header{
-    text-decoration: peru underline overline wavy;
     font-size: 3rem;
     color: green;
 }
@@ -61,17 +76,12 @@ main{
     width: 3rem;
     height: 0.5rem;
     border-radius: .25rem;
-    background-color: thistle;
+    background-color: mediumvioletred;
     margin: 3rem 0;
 }
-.headshot {
-    width: 15rem;
-    height: 15rem;
-    border-radius: 50%;
-}
 
-button{
-    width: 100%;
+.button{
+    width: 15rem;
     margin-top: 1rem;
     border: 0;
     padding: 10px 20px;
@@ -83,20 +93,14 @@ button{
     box-shadow: 10px 10px 59px 1px rgba(42,190,209,0.6) inset;
     border-radius: 10px;
 }
-button:hover{
+.button:hover{
     background: rgb(135,226,107);
     background: linear-gradient(90deg, rgba(135,226,107,1) 0%, rgba(215,107,19,1) 100%);
     text-transform: uppercase;
 }
-button:active{
+.button:active{
     box-shadow: 10px 10px 20px 27px rgba(27,53,189,0.75) inset;
 }
-
-/* .main_left{
-    width: 30rem;
-    height: 30rem;
-    margin: 0.5rem;
-} */
 
 .main_left_image{
     width: 25rem;
@@ -112,19 +116,21 @@ button:active{
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+    padding: 4rem 0 0 0;
 }
 
 .second_part_image{
     width: 30rem;
-    margin: .5rem;
+    margin: 3rem;
     display: flex;
     justify-content: space-evenly;
 }
 
 .second_part_info{
     width: 30rem;
-    margin: .5rem;
+    margin: 3rem;
     font-size: 2rem;
+    max-width: 30rem;
 }
 
 .social_part{
@@ -145,11 +151,33 @@ button:active{
 #shadow{
     box-shadow: 2px 2px 5px red;
 }
+
+.fonta {
+    margin: 0.3rem;
+}
+form {
+    margin: 0 0 4rem 0;
+}
+.form_part{
+    display: flex;
+    justify-content: center;
+}
+
+.input_section{
+    margin: 1rem 0;
+    display: flex;
+}
+
+.input_section_name{
+    display: flex;
+    flex-direction: column;
+    margin: 0 .5rem 0 0;
+}
+
 footer {
     background: #636769;
-    width:100%;
-    position:relative;
-    bottom:0px;
+    display: flex;
+    justify-content: center;
  }
 
  ul{
