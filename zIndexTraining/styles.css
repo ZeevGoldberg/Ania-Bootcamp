@@ -1,0 +1,41 @@
+body{
+    font-family: 'Courier New', Courier, monospace;
+    background-color: greenyellow;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.first-block{
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    position: absolute;
+    background-color: purple;
+    z-index: 0;
+}
+.second-block{
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    position: absolute;
+    background-color: red;
+    z-index: 1;
+}
+.third-block{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    position: absolute;
+    background-color: orange;
+    z-index: 2;
+}
+.fourth-block{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    position: absolute;
+    background-color: yellow;
+    z-index: 3;
+}
