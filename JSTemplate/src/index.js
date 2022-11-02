@@ -127,12 +127,31 @@ for (let i = 0; i < nuugs.length; i++) {
 }
 }
 
-const user = {
+const users = [
+    {
     name: 'Gool',
     lastName: 'Foof',
+    followers: 52,
+    isFollowed: false,
     pets: 'Snake'
-    
+
+},
+{
+    name: 'comfieCozie',
+    lastName: 'dottie',
+    followers: 65,
+    isFollowed: true,
+    pets: 'rabbit'
+},
+{
+    name: 'ArmaliClark',
+    lastName: 'bus',
+    followers: 101,
+    isFollowed: true,
+    pets: 'cats'
 }
+]
+
 
 
 
