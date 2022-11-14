@@ -152,7 +152,34 @@ const users = [
 }
 ]
 
+console.log(users[1].isFollowed);
 
+for (i= 0; i < users.length; i++) {
+        if (users[i].isFollowed === true) {
+            console.log(users[i].name + ' yep!');
+        }
+    }
 
+function callName(name, time){
+    console.log('Hey ' + name + ' what is up with your joggle at ' + time);
+}
 
+callName('kimmi', 22);
+callName('kyli', 59);
+callName('bri', 42);
+callName('jesse', 54);
+
+function sendReminder(tag, point) {
+    console.log('hey ' + tag + ' your appoitment is in ' + point + ' please be late!');
+}
+
+sendReminder('safi', 5)
+sendReminder('jenna', 4)
+sendReminder('bonnie', 2)
+sendReminder('abby', 6)
+
+let alertName = 'Becky';
+function giveAlert(){
+    console.log(alertName + ' wake up and smell the other');
+}
 
